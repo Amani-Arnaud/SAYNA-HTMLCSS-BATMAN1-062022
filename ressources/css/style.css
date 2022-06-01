@@ -1,0 +1,101 @@
+/* DEFINITION DES TYPOGRAPHIES  ET PROPRIETES GENERALES ###########*/
+
+@font-face {
+    font-family: 'Rajdhani-Medium';
+    font-style: medium;
+    src: url('fonts/Rajdhani-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    font-style: bold;
+    src: url('fonts/SpaceGrotesk-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Regular';
+    src: url('fonts/SpaceGrotesk-Regular.ttf');
+}
+
+
+/* attribution des fonts aux balises prédefinir*/
+
+h1 {
+    font-family: 'Rajdhani-Medium';
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'SpaceGrotesk-Bold';
+    font-size: 12px;
+}
+
+p {
+    font-family: 'SpaceGrotesk-Regular';
+    text-justify: auto;
+    color: #ffffff;
+}
+
+.btn {
+    font-family: 'Rajdhani-Medium';
+    font-size: 20px;
+    background-color: linear-gradient(rgba(255, ));
+}
+
+
+/* Par defaut toutes les balises doivent être coller les unes aux autre */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../Assets/Illustrations/Bathome1.png') no-repeat center;
+    /* background-size: 1000px; */
+    background-position: 0px 0px;
+    background-size: 100%;
+    background-color: black;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    border: solid rgba(255, 255, 255, 0.1) 3px;
+}
+
+
+/* FIN PROPRIETE GENERALE  #############*/
+
+
+/* STYLE DE HEADER ###############*/
+
+
+/* .logo-header {} */
+
+.logo-header,
+.menu {
+    display: inline-block;
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+.menu {
+    float: right;
+    margin: 50px;
+}
+
+.menu a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+
+/* DEFINITION des propriété de la section Into ####################*/
+
+.intro {
+    margin: auto;
+    margin-top: 180px;
+}
+
+.intro
