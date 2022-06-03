@@ -23,6 +23,7 @@
 h1 {
     font-family: 'Rajdhani-Medium';
     font-size: 36px;
+    color: #ffffff;
 }
 
 h2 {
@@ -32,7 +33,7 @@ h2 {
 
 p {
     font-family: 'SpaceGrotesk-Regular';
-    text-justify: auto;
+    text-align: justify;
     color: #ffffff;
 }
 
@@ -97,5 +98,3 @@ body {
     margin: auto;
     margin-top: 180px;
 }
-
-.intro
