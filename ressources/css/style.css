@@ -24,23 +24,38 @@ h1 {
     font-family: 'Rajdhani-Medium';
     font-size: 36px;
     color: #ffffff;
+    /* text-align: center; */
 }
 
 h2 {
-    font-family: 'SpaceGrotesk-Bold';
-    font-size: 12px;
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 22px;
 }
 
 p {
     font-family: 'SpaceGrotesk-Regular';
     text-align: justify;
     color: #ffffff;
+    font-size: 22px;
 }
 
 .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
     font-family: 'Rajdhani-Medium';
     font-size: 20px;
-    background-color: linear-gradient(rgba(255, ));
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.40), rgba(137, 0, 9, 0.60));
+    width: 200px;
+    height: 30px;
+}
+
+.btn:hover {
+    transition: 5s;
+    background-image: linear-gradient(to right, #eddebf, #890009);
 }
 
 
@@ -61,7 +76,7 @@ body {
 
 .container {
     margin: auto;
-    width: 80%;
+    width: 85%;
     border: solid rgba(255, 255, 255, 0.1) 3px;
 }
 
@@ -94,7 +109,139 @@ body {
 
 /* DEFINITION des propriété de la section Into ####################*/
 
+.intro-main {
+    position: relative;
+}
+
 .intro {
     margin: auto;
-    margin-top: 180px;
+    margin-top: 250px;
+    width: 600px;
+    text-align: center;
 }
+
+.intro .content p {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.intro .content h2 {
+    margin: 30px;
+    color: #ffffff;
+}
+
+.intro .icon-down {
+    margin-top: 300px;
+}
+
+.intro-main .logo-content .arrow,
+.intro-main .logo-content .social-logo {
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+
+.intro-main .logo-content {
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 95.5%;
+}
+
+
+/* FIN section Intro ############################# */
+
+
+/* DEFINITION des propriétés de la section batman au cinema -> Alliés ####################*/
+
+
+/* propriétés s'applicant à toutes les section semblable */
+
+.box {
+    margin: auto;
+    width: 85%;
+    margin-bottom: 100px;
+}
+
+.box .title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box .texte {
+    width: 95%;
+    /* font-size: 1.4em; */
+    margin-bottom: 80px;
+}
+
+.box .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .row .profil {
+    text-align: center;
+    width: 310px;
+}
+
+.box .row .profil:hover {
+    transition: 1s;
+    width: 370px;
+}
+
+.box .row .profil img {
+    width: 100%;
+}
+
+.box .row .profil-title {
+    margin: 25px;
+    text-align: center;
+}
+
+
+/* Priopriétés spécifique à chaque section */
+
+.batman {
+    margin-top: 70px;
+}
+
+
+/* FIN section Batman -> Alliés ############################# */
+
+
+/* DEFINITION des propriétés justice league ####################*/
+
+.justice-main {
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.justice-main .title {
+    margin-bottom: 30px;
+}
+
+.justice-leagues img {
+    margin-left: -10%;
+    width: 120%;
+}
+
+
+/* FIN section justice league ############################# */
+
+
+/* DEFINITION des propriétés MEDIA ####################*/
+
+.slides-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slides-media .slides {
+    display: flex;
+    width: 500px;
+}
+
+
+/* FIN section MEDIA ############################# */
