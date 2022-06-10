@@ -145,17 +145,16 @@ body {
     margin-top: 300px;
 }
 
-.intro-main .logo-content .arrow,
-.intro-main .logo-content .social-logo {
-    margin: auto;
-    display: block;
-    padding: 10px;
-}
-
 .intro-main .logo-content {
     position: absolute;
     margin-top: -600px;
     margin-left: 95.5%;
+}
+
+.logo-content img {
+    margin: auto;
+    display: block;
+    padding: 10px;
 }
 
 
@@ -215,6 +214,31 @@ body {
     margin-top: 70px;
 }
 
+.container-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.div-allies {
+    justify-content: space-between;
+}
+
+.container-title .title {
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.container-title .img-nemesis {
+    margin-left: -60px;
+    width: 150px;
+}
+
+.div-allies .img-allies {
+    margin-top: -200px;
+    margin-right: -19%;
+}
+
 
 /* FIN section Batman -> Alliés ############################# */
 
@@ -222,7 +246,7 @@ body {
 /* DEFINITION des propriétés justice league ####################*/
 
 .justice-main {
-    margin: auto;
+    margin: 0 auto;
     width: 80%;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -233,8 +257,10 @@ body {
 }
 
 .justice-leagues img {
-    margin-left: -10%;
-    width: 120%;
+    /* margin-left: -10%; */
+    /* margin-right: -10%; */
+    margin-left: -9%;
+    width: 99vw;
 }
 
 
@@ -245,40 +271,176 @@ body {
 
 .slides-media {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
+.arrow-prec {
+    margin: auto;
+    margin-left: 0;
+}
+
+.arrow-next {
+    margin: auto;
+    margin-right: 0;
+}
+
 .slides-media .slides {
+    background-image: linear-gradient(to bottom right, rgba(237, 222, 191, 0.40), rgba(25, 88, 125, 0.40));
     display: flex;
-    width: 500px;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.slides .description {
+    border-radius: 0px 20px 20px 0px;
+    border: solid 2px rgba(255, 255, 255, 0.1);
+    border-left: 0;
+}
+
+.description p {
+    margin: 10px;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+.description .types-media {
+    font-size: 1em;
+}
+
+.description .version-media span {
+    color: #FFFF00;
+}
+
+.description .name-media {
+    font-family: 'Rajdhani-Medium';
+    font-size: 1.2em;
+}
+
+.slides img {
+    width: 100%;
+}
+
+
+/* Image d'annonce */
+
+.bande-annonce {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.bande-annonce img {
+    width: 95%;
+    vertical-align: middle;
 }
 
 
 /* FIN section MEDIA ############################# */
 
 
+/* DEFINITION des propriétés CONTACT ####################*/
+
+.contact {
+    background-color: black;
+    background-image: linear-gradient(to bottom right, rgba(237, 222, 191, 0.40), rgba(25, 88, 125, 0.40));
+    margin-left: -9%;
+    width: 99vw;
+    height: 800px;
+}
+
+.contact-main {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.contact-main h1 {
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+
+/* FIN section CONTACT ############################# */
+
+
+/* DEFINITION des propriétés de la section CITATION ####################*/
+
+.citation {
+    margin-top: 200px;
+}
+
+.citation-main {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.citation-main .open-citation {
+    margin: auto;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.citation-main .close-citation {
+    margin: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.citation-main .text-citation {
+    width: 60%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 0.7em;
+}
+
+.text-citation p {
+    text-align: center;
+    font-weight: 70px;
+    line-height: 40px;
+}
+
+.text-citation p span {
+    padding: 20px;
+    display: block;
+    font-size: small;
+    line-height: 30px;
+}
+
+
+/* FIN section CONTACT ############################# */
+
+
 /* DEFINITION des propriétés FOOTER ####################*/
 
 .footer {
     border-top: 0;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 100px;
 }
 
 .footer .space-wb {
-    /* display: flex;
-    justify-content: center; */
     margin: auto;
     text-align: center;
-}
-.space-wb p, .space-wb img {
-    display: inline-block;
+    margin: 20px;
 }
 
-.space-wb p{
+.space-wb p,
+.space-wb img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.space-wb p {
     margin-left: 10px;
-    /* font-size: 11px; */
-    text-align: center;
+    font-size: 11px;
 }
 
 .footer .img-footer {
@@ -286,8 +448,30 @@ body {
     text-align: center;
 }
 
-.img-footer .logo-author, .img-footer .logo-social {
-    vertical-align: middle;
+.logo-footer {
+    display: inline-block;
+    margin: 10px;
 }
 
+.logo-footer img {
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.img-footer .social img {
+    margin: 15px;
+}
+
+
 /* FIN FOOTER */
+
+
+/* ###################################################################### */
+
+
+/* ######################## PROPRIETE RESPONSIVE ######################## */
+
+
+/* ###################################################################### */
+
+@media (max-width: 800px) {}

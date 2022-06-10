@@ -110,7 +110,10 @@
         <section class="box nemesis">
             <!-- Box princiaple de la section -->
             <div>
-                <h1 class="title"> NÉMÉSIS </h1>
+                <div class="container-title">
+                    <h1 class="title"> NÉMÉSIS </h1>
+                    <img src="ressources/Assets/Illustrations/Bathome13.png" alt="Image nemesis" class="img-nemesis">
+                </div>
                 <p class="texte">
                     Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League il aura l’occasion
                     de se mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmi les derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
@@ -148,7 +151,10 @@
         <section class="box alllies">
             <!-- Box princiaple de la section -->
             <div>
-                <h1 class="title"> ALLIES </h1>
+                <div class="container-title div-allies">
+                    <h1 class="title"> ALLIES </h1>
+                    <img src="ressources/Assets/Illustrations/Bathome12.png" alt="Image Alliés" class="img-allies">
+                </div>
                 <p class="texte">
                     Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le premier numéro des aventures de l’homme chauve-souris en 1940. Tantôt ennemie
                     tantôt alliée la jeune femme fatale fera tourner la tête de Batman à maintes reprises. Du côté de la police, Bruce pourra compter sur l’aide infaillible de James Gordon, “Jim”, qui désire lui aussi nettoyer sa ville de la criminalité
@@ -204,16 +210,16 @@
             <h1 class="title">MULTIMÉDIA</h1>
             <!-- Slide  -->
             <div class="slides-media">
-                <a href="#" onclick="">
-                    <img src="ressources/Assets/Logos/icon_flèche_1.png" alt="">
+                <a href="#" onclick="" class="arrow-prec">
+                    <img src="ressources/Assets/Logos/icon_flèche_1.png" alt=" fleche precedent">
                 </a>
 
                 <div class="slides">
-                    <img src="ressources/Assets/Illustrations/Bathome_ba1.png" alt="">
+                    <img src="ressources/Assets/Illustrations/Bathome_ba1.png" alt="Batman Begins">
                     <div class="description">
                         <p class="types-media"> ACTION, ADVENTURE</p>
-                        <h2 class="name-media">Batman Begins</h2>
-                        <h3 class="version-media">IMDB: <span>8.2</span></h3>
+                        <p class="name-media">Batman Begins</p>
+                        <p class="version-media">IMDB: <span>8.2</span></p>
                         <p class="content-media">
                             Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De
                             retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.
@@ -221,56 +227,60 @@
                     </div>
                 </div>
 
-                <a href="#" onclick="">
-                    <img src="ressources/Assets/Logos/icon_flèche_2.png" alt="">
+                <a href="#" onclick="" class="arrow-next">
+                    <img src="ressources/Assets/Logos/icon_flèche_2.png" alt="fleche suivante">
                 </a>
             </div>
 
-            <!-- Bande d'annonce -->
-            <div>
-                <img src="ressources/Assets/Illustrations/Bathome_ba2.png" alt="">
-            </div>
-            <!-- FIN bande d'annonce -->
+
         </section>
+        <!-- Bande d'annonce -->
+        <div class="bande-annonce">
+            <img src="ressources/Assets/Illustrations/Bathome_ba2.png" alt="Batman annonce">
+        </div>
+        <!-- FIN bande d'annonce -->
         <!-- FIN section media -->
 
         <!-- SECTION Contact -->
         <section class="contact">
+            <div class="contact-main">
+                <h1> Prenons contact </h1>
 
-            <h1> Prenons contact </h1>
+                <form action="" method="get">
+                    <label for="email">Adresse email</label>
+                    <input type="email" name="email" id="email" placeholder="Adresse email">
 
-            <form action="" method="get">
-                <label for="email">Adresse email</label>
-                <input type="email" name="email" id="email" placeholder="Adresse email">
+                    <label for="">NEWSLETTER</label>
+                    <p>En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :</p>
+                    <input type="checkbox" name="" id="">
 
-                <label for="">NEWSLETTER</label>
-                <p>En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :</p>
-                <input type="checkbox" name="" id="">
-
-                <select name="" id="">
-                    <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-                    <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-                    <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-                </select>
-            </form>
-
+                    <select name="" id="">
+                        <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                        <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                        <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                    </select>
+                    <input type="text" name="type-new" id="" placeholder="Souhaitez-vous recevoir des news">
+                    <button class="btn-form">Des Films</button>
+                    <button class="btn-form">Des Films</button>
+                    <button class="btn-form">Des Films</button>
+                    <input type="submit" value="envoyer" class="btn">
+                    <a href="" class="btn">Envoyer</a>
+                </form>
+            </div>
         </section>
         <!-- FIN Section Contact -->
 
         <!-- SECTION citation -->
-        <section>
+        <section class="citation">
             <!-- la div principale -->
-            <div>
-                <div>
-                    <img src="/ressources/Assets/Logos/icon_guillemets_1.png" alt="">
-                </div>
-                <div>
+            <div class="citation-main">
+                <img src="ressources/Assets/Logos/icon_guillemets_1.png" alt="" class="open-citation">
+                <div class="text-citation">
                     <p>
-                        « La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles. »
-                        The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)
+                        La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles. <span>The Dark Knight : Le Chevalier Noir - <br> Le Joker à Batman (2008)</span>
                     </p>
                 </div>
-                <img src="/ressources/Assets/Logos/icon_guillemets_2.png" alt="">
+                <img src="ressources/Assets/Logos/icon_guillemets_2.png" alt="" class="close-citation">
             </div>
         </section>
         <!-- FIN citation -->
@@ -286,13 +296,13 @@
         </div>
         <div class="img-footer">
 
-            <div class="logo-author">
+            <div class="logo-footer author">
                 <img src="ressources/Assets/Logos/logo_sayna_white.png" alt="logo SAYNA">
                 <img src="ressources/Assets/Logos/icon_x.png" alt="x">
                 <img src="ressources/Assets/Logos/icon_DC.png" alt="Logo DC">
             </div>
 
-            <div class="logo-social">
+            <div class="logo-footer social">
                 <a href="#"><img src="ressources/Assets/Logos/icon_facebook.png" alt="facebook"></a>
                 <a href="#"><img src="ressources/Assets/Logos/icon_ig.png" alt="Instagram"></a>
                 <a href="#"><img src="ressources/Assets/Logos/icon_tw.png" alt="Twitter"></a>
