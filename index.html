@@ -12,17 +12,16 @@
 <body>
 
     <!-- ENTÊTE DE LA PAGE -->
-    <header>
+    <header id="header">
         <div class="container">
 
-            <div class="logo-header">
+            <div class="header">
                 <img src="ressources/Assets/Logos/logohome.png" alt="logo home">
-            </div>
-
-            <div class="menu">
-                <h1>
-                    <a class="Accueil" href="#">HOME</a>
-                </h1>
+                <div class="menu">
+                    <ul>
+                        <li><a class="Accueil" href="#">HOME</a></li>
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -44,8 +43,8 @@
 
                     <h2>Il est Batman.</h2>
 
-                    <a href="#" class="btn"> VOIR LE HEROS </a>
-                    <a href="#" class="btn"> LES ADVERSAIRES </a>
+                    <a href="#hero" class="btn"> VOIR LE HEROS </a>
+                    <a href="#adversaire" class="btn"> LES ADVERSAIRES </a>
 
                 </div>
 
@@ -57,18 +56,18 @@
             </div>
 
             <div class="logo-content">
-                <img src="ressources/Assets/Logos/logo_bat_flèche.png" alt="fleche haut" class="arrow up">
+                <a href="#header"><img src="ressources/Assets/Logos/logo_bat_flèche.png" alt="fleche haut" class="arrow up"></a>
                 <img src="ressources/Assets/Logos/icon_facebook.png" alt="icon facebook" class="social-logo">
                 <img src="ressources/Assets/Logos/icon_ig.png" alt="icon instagrame" class="social-logo">
                 <img src="ressources/Assets/Logos/icon_tw.png" alt="icon twitter" class="social-logo">
-                <img src="ressources/Assets/Logos/logo_bat_flèche_2.png" alt="icon twitter" class="arrow down">
+                <a href="#contact"><img src="ressources/Assets/Logos/logo_bat_flèche_2.png" alt="icon twitter" class="arrow down"></a>
             </div>
             <!-- FIN section intro -->
         </section>
         <!-- FIN section home -->
 
         <!-- Section versions batman au cinema -->
-        <section class="box batman">
+        <section class="box batman" id="hero">
             <!-- Box princiaple de la section -->
             <div>
                 <h1 class="title"> BATMAN AU CINÉMA </h1>
@@ -107,7 +106,7 @@
         <!-- FIN SECTION VERSIONS BATMAN -->
 
         <!-- Section NÉMÉSIS -->
-        <section class="box nemesis">
+        <section class="box nemesis" id="adversaire">
             <!-- Box princiaple de la section -->
             <div>
                 <div class="container-title">
@@ -242,29 +241,37 @@
         <!-- FIN section media -->
 
         <!-- SECTION Contact -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-main">
                 <h1> Prenons contact </h1>
 
                 <form action="" method="get">
-                    <label for="email">Adresse email</label>
+                    <label for="email" class="lb-adresse">ADRESSE EMAIL</label>
                     <input type="email" name="email" id="email" placeholder="Adresse email">
 
-                    <label for="">NEWSLETTER</label>
-                    <p>En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :</p>
+                    <label for="" class="lb-newsletter">NEWSLETTER</label>
+                    <label class="lb-choix">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :
                     <input type="checkbox" name="" id="">
+                    </label>
 
                     <select name="" id="">
                         <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-                        <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-                        <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                        <option value="">Une fois par semaine</option>
+                        <option value="">Une fois toutes les deux semaines(2fois par mois)</option>
+                        <option value="">Une fois par mois</option>
+                        <option value="">Une fois tous les trois mois</option>
+                        <option value="">Une fois tous les six mois</option>
                     </select>
                     <input type="text" name="type-new" id="" placeholder="Souhaitez-vous recevoir des news">
-                    <button class="btn-form">Des Films</button>
-                    <button class="btn-form">Des Films</button>
-                    <button class="btn-form">Des Films</button>
-                    <input type="submit" value="envoyer" class="btn">
-                    <a href="" class="btn">Envoyer</a>
+                    <div class="div-formbtn">
+                        <a href="#" class="btn-form">Des films</a>
+                        <a href="#" class="btn-form">Des comics</a>
+                        <a href="#" class="btn-form">De tout</a>
+                    </div>
+
+                    <label for="message" class="lb-message">MESSAGE</label>
+                    <textarea name="" id="" cols="30" rows="1" placeholder="Laissez un commentaire pour la communauté"></textarea>
+                    <input type="submit" value="CONFIRMER">
                 </form>
             </div>
         </section>

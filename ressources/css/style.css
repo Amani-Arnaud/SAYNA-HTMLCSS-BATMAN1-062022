@@ -18,13 +18,34 @@
 }
 
 
+/* ANNIMATION  */
+
+@keyframes enter-box {
+    from {
+        margin: auto;
+        margin-left: -100%;
+        margin-top: 70px;
+        width: 85%;
+    }
+    to {
+        margin: auto;
+        margin-left: 7%;
+        margin-bottom: 100px;
+        margin-top: 70px;
+        width: 85%;
+    }
+}
+
+
+/* FIN ANIMATION */
+
+
 /* attribution des fonts aux balises prédefinir*/
 
 h1 {
     font-family: 'Rajdhani-Medium';
     font-size: 36px;
     color: #ffffff;
-    /* text-align: center; */
 }
 
 h2 {
@@ -93,27 +114,29 @@ body {
 
 /* .logo-header {} */
 
-.logo-header,
-.menu {
-    display: inline-block;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
-.logo-header img:hover {
+.header img:hover {
     filter: blur(4px);
-    /* filter: brightness(250%); */
-    /* filter: contrast(180%); */
 }
 
-.menu {
-    float: right;
-    margin: 50px;
+.header ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
 }
 
 .menu a {
     text-decoration: underline;
     color: #ffffff;
+    font-family: 'Rajdhani-Medium';
+    font-size: 36px;
 }
 
 
@@ -146,14 +169,15 @@ body {
 }
 
 .intro-main .logo-content {
-    position: absolute;
-    margin-top: -600px;
-    margin-left: 95.5%;
+    position: fixed;
+    top: 45vh;
+    right: 3.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo-content img {
-    margin: auto;
-    display: block;
     padding: 10px;
 }
 
@@ -170,6 +194,8 @@ body {
     margin: auto;
     width: 85%;
     margin-bottom: 100px;
+    animation-name: enter-box;
+    animation-duration: 4s;
 }
 
 .box .title {
@@ -195,7 +221,9 @@ body {
 
 .box .row .profil:hover {
     transition: 1s;
-    width: 370px;
+    /* width: 370px; */
+    /* transform: scale(1.10); */
+    zoom: 1.1;
 }
 
 .box .row .profil img {
@@ -339,6 +367,10 @@ body {
     vertical-align: middle;
 }
 
+.bande-annonce img:hover {
+    box-shadow: 1px 2px 20px 15px#ffffff;
+}
+
 
 /* FIN section MEDIA ############################# */
 
@@ -350,19 +382,108 @@ body {
     background-image: linear-gradient(to bottom right, rgba(237, 222, 191, 0.40), rgba(25, 88, 125, 0.40));
     margin-left: -9%;
     width: 99vw;
-    height: 800px;
 }
 
 .contact-main {
     margin: 0 auto;
-    width: 80%;
-    text-align: center;
+    width: 750px;
     padding-top: 60px;
+    text-align: center;
 }
 
 .contact-main h1 {
     margin-bottom: 80px;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.lb-adresse,
+.lb-newsletter,
+.lb-message {
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.lb-choix {
+    display: block;
+    width: 80%;
+    color: #c4c4c4;
+    font-family: 'Rajdhani-Medium';
+    font-size: 18px;
+    text-align: left;
+    margin: 10px 0px;
+}
+
+input[type=email],
+input[type=text],
+textarea,
+select {
+    width: 100%;
+    margin: 20px 0px;
+    border: none;
+    border-bottom: 2px solid #c4c4c4;
+    background-color: #ffffff00;
+    color: #c4c4c4;
+    font-size: 16px;
+    font-family: 'SpaceGrotesk-Regular';
+}
+
+input[type=checkbox]:checked {
+    font-family: 'FontAwesome';
+    content: "\f00d";
+    color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #c4c4c4;
+}
+
+input:focus,
+textarea:focus {
+    border: 0;
+}
+
+.contact-main input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    text-align: bottom;
+}
+
+.div-formbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.div-formbtn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'SpaceGrotesk-Regular';
+    margin: 15px;
+    padding: 10px 30px;
+    font-size: 0.8em;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #c4c4c4, #19587D);
+    border-image-slice: 1;
+}
+
+.div-formbtn a:hover {
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.40), rgba(25, 88, 125, 0.40));
+}
+
+input[type=submit] {
+    border: none;
+    align-self: center;
+    padding: 20px 80px;
+    margin-bottom: 50px;
+    font-family: 'SpaceGrotesk-Regular';
+    color: #ffffff;
+    font-size: 18px;
+    background-image: linear-gradient(to right, rgba(13, 14, 9, 0.4), rgba(137, 0, 9, 0.9));
 }
 
 
@@ -441,6 +562,7 @@ body {
 .space-wb p {
     margin-left: 10px;
     font-size: 11px;
+    text-align: center;
 }
 
 .footer .img-footer {
@@ -474,4 +596,73 @@ body {
 
 /* ###################################################################### */
 
-@media (max-width: 800px) {}
+@media (max-width: 800px) {
+    /* responsive section intro */
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .intro .icon-down {
+        margin-top: 30px;
+    }
+    .intro-main .logo-content {
+        background-color: red;
+        right: 0;
+    }
+    .logo-content img {
+        display: block;
+    }
+    /* fin section intro */
+    /* responsive section batman */
+    .box .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-title .img-allies {
+        display: none;
+    }
+    /* fin section batman */
+    /* reponsive multimedia */
+    .arrow-prec,
+    .arrow-next {
+        display: none;
+    }
+    .slides-media .slides {
+        width: 100%;
+        height: auto;
+    }
+    .description p,
+    .description .types-media,
+    .description .name-media {
+        font-size: 0.5em;
+    }
+    /* fin multimedia */
+    /* reponsive CONTACT      */
+    .contact-main {
+        width: 90%;
+    }
+    /* fin formmulaire  */
+    /* responsive SECTION CITATION  */
+    .citation {
+        margin-top: 20px;
+    }
+    .citation-main {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .citation-main .text-citation {
+        width: 100%;
+        padding: 5px;
+    }
+    /* Fin CITATION */
+    /* reponsive FOOTER  */
+    .footer {
+        padding-top: 60px;
+    }
+    /* fin Footer */
+}
