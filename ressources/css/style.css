@@ -610,8 +610,7 @@ input[type=submit] {
         margin-top: 30px;
     }
     .intro-main .logo-content {
-        background-color: red;
-        right: 0;
+        display: none;
     }
     .logo-content img {
         display: block;
